@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particle System</title>
+
+    <!-- A-Frame -->
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+    <!-- SPE Particle System -->
+    <script src="https://unpkg.com/aframe-spe-particles-component@1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-sky color="skyblue"></a-sky>
+        <a-entity position="0 0 0" spe-particles="color: blue, white;blending: additive; velocity: 0 15 0; velocity-spread: 3 0 3; acceleration: 0 -14 0; duration: -1"></a-entity>
+        <a-plane position="0 0 0" rotation="-90 0 0" src="./Grass_Diff.png" repeat="50 50" width="100" height="100"></a-plane>
+        <a-cylinder position="0 0 0" scale=" 3 2 3" src="./Stone_Diff.png" repeat="10 2"></a-cylinder>
+        <a-sphere position="40 95 -200" scale="7 7 7" color="orange"></a-sphere>
+        <a-camera position="0 1 10"></a-camera>
+    </a-scene>
+</body>
+</html>
